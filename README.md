@@ -2,6 +2,14 @@
 
 Blank starter template for Elder.js sites.
 
+This template asumes you have basic knowledge of how to use Elder.js. If you are wanting to learn more about all the bits and pieces then go ahead and use the official Elder.js template. I created this template for myself to be able to quick-start new projects, it's basically a slim fork of the original. I usually want to be ready to add TailwindCSS, SCSS, or PostCSS. So I might add this as an option or something.
+
+Here's a list of the main differences between this and the official template:
+
+- I use tabs instead of spaces for all files.
+- I removed prettier and eslint.
+- I removed most examples only leaving placeholders for common things. 
+
 ## Get started
 
 ### Install the dependencies:
