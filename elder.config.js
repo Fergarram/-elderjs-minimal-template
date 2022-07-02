@@ -26,15 +26,17 @@ module.exports = {
 		'@elderjs/plugin-markdown': {
 			routes: ['blog'],
 		},
-		'@elderjs/plugin-browser-reload': {
-			// this reloads your browser when nodemon restarts your server.
-			port: 8080,
-			reload: false, // if you are having issues with reloading not working, change to true.
-		},
-		'@elderjs/plugin-seo-check': {
-			display: ['errors', 'warnings'], // If the errors are too verbose remove 'warnings'
-			//writeLocation: './report.json', // if you want to write a report of errors
-		},
+		'@elderjs/plugin-images': {
+			// cssString: false,
+			widths: [1280, 992, 768, 576, 400, 350, 200],
+			fileTypes: ['webp'],
+			folders: [
+				{
+					src: '/assets/images/*',
+					output: '/images/',
+				},
+			],
+		}
 	},
 	shortcodes: { closePattern: '}}', openPattern: '{{' },
 };
